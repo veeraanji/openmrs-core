@@ -1,0 +1,11 @@
+node('CENTOS')
+{
+    stage('Git')
+    {
+        git 'https://github.com/veeraanji/openmrs-core.git'
+    }
+    stage('package')
+    
+       sh 'mvn package'
+    }
+}

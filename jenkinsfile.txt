@@ -6,7 +6,6 @@ node('CENTOS')
     }
     stage('package'){
 
-  
       sh 'mvn package'
     }
 }

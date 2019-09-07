@@ -4,8 +4,9 @@ node('CENTOS')
     {
         git 'https://github.com/veeraanji/openmrs-core.git'
     }
-    stage('package')
-    
-       sh 'mvn package'
+    stage('package'){
+
+  
+      sh 'mvn package'
     }
 }
